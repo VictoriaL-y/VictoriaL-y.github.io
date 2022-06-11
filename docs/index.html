@@ -1,49 +1,293 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
     <title>My first amazing webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Scripts Jquery, Poppers.js, Bootstrap.js-->
+    <script defer src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+        integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/0f00023ff0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Welcome to our course</h1>
-    <h2>Welcome to our course</h2>
-    <h3>Welcome to our course</h3>
-    <h4>Welcome to our course</h4>
-    <h5>Welcome to our course</h5>
-    <h6>Welcome to our course</h6>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Repellat, dolores inventore. 
-        Quam sint culpa expedita in optio exercitationem accusantium provident. 
-        Maiores adipisci quisquam dignissimos nemo id tempora odit ab non.
+    <!-- Navbar -->
 
-    </p>
-    <a href="https://www.google.com">Visit Google</a>
-            
-        <div class="">
-            <img src="berlin.jpeg" alt="Berlin">
-        </div>
-            
-        <div class="">
-            <ol>
-                <li>Bread</li>
-                <li>Milk</li>
-                <li>Coffee</li>
-                <li>Eggs</li>
-                <li>Butter</li>
-            </ol>
-        </div>
 
-        <div class="">
-            <ul>
-                <li>Bread</li>
-                <li>Milk</li>
-                <li>Coffee</li>
-                <li>Chocolate</li>
-            </ul>
-        </div>
+    <nav class="navbar navbar-expand-md fixed-top navbar-custom">
+        <div class="container-fluid">
+            <span class="navbar-brand me-auto"><i class="fa-brands fa-envira"></i>Coffee shop</span>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    </body>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                <ul class="navbar-nav mx-md-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Carousel-->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://res.cloudinary.com/devqm7qmb/image/upload/v1654907935/nathan-dumlao-JLPoB3Gahcc-unsplash_1_xpt1lx.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/devqm7qmb/image/upload/v1654899480/max-letek-KuGAgQm_Rvs-unsplash_v3f7mg.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/devqm7qmb/image/upload/v1654899673/najib-kalil-BNHriM9hio4-unsplash_r7wfl0.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="placehold-under-carousel"></div>
+
+    <!--<div class="container-fluid bg">
+        <h1 class="carousel-caption"><i class="fa-brands fa-envira"></i>Coffee shop</h1>
+        <div class="bg-image">
+        <img class="placehold-mg"
+            src="https://res.cloudinary.com/devqm7qmb/image/upload/v1654820695/nathan-dumlao-JLPoB3Gahcc-unsplash_jduo9i.jpg"
+            alt="" />
+        </div>
+    </div> -->
+
+    <!-- <div class="container-fluid">
+        <p>We don't make your coffee<br>We make your day</p>
+    </div> -->
+
+
+    <!--Menu-->
+    <section class="menu">
+        <div class="container-fluid">
+            <div class="row text-justify">
+                <h2>OUR POPULAR</h2>
+                <div class="menu-items">
+                    <div class="col-md-6 offset-md-3">
+                        <table>
+                            <tr>
+                                <td>Emil</td>
+                                <td>Tobias</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Emil</td>
+                                <td>Tobias</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Emil</td>
+                                <td>Tobias</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Emil</td>
+                                <td>Tobias</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Emil</td>
+                                <td>Tobias</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>14</td>
+                            </tr>
+                        </table>
+                    </div>
+                <div><a href="#" class="btn btn-primary">Click me</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Our Philosophy-->
+    <section>
+        <div class="container">
+            <div class="row text-justify">
+                <div class="col-md-6">
+
+                </div>
+                <div class="col-md-6">
+                    <h2>OUR PHILOSOPHY</h2>
+                    <p>Due to our family tradition our company attracts people who are absolutely passionate about
+                        coffee and focused on professional service. Confidence, sustainability and quality assurance
+                        define every aspect of our work and the coffee trade. Our main goal is to serve our customers
+                        with the very best </p>
+                    <div><a href="#" class="btn btn-primary">More about us</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Choose our cafe if you desire-->
+    <section>
+        <div class="container">
+            <div class="row text-justify">
+                <div class="col-md-6">
+                    <h2>CHOOSE OUR CAFE IF YOU DESIRE:</h2>
+                    <ul>
+                        <li>Tasty Coffee<br>
+                            Most of all, we are committed to giving you the best customer service as well as a
+                            comfortable environment to sit with good friends, research study and work.</li>
+                        <li>Fast Cooking<br>
+                            Our preferred, straightforward and also unique method of developing cool coffee.</li>
+                        <li>Free Delivery<br>
+                            We are the Cafe with a bold vision to make a distinction in both our neighborhood and also
+                            worldwide neighborhoods.</li>
+                    </ul>
+                    <!-- <p>Tasty Coffee<br>
+                        Most of all, we are committed to giving you the best customer service as well as a comfortable environment to sit with good friends, research study and work.<br>
+                        Fast Cooking<br>
+                        Our preferred, straightforward and also unique method of developing cool coffee.<br>
+                        Free Delivery<br>
+                        We are the Cafe with a bold vision to make a distinction in both our neighborhood and also worldwide neighborhoods.
+                    </p> -->
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--Questions-->
+    <div class="container">
+        <h2>Do you have any questions?</h2>
+        <p>If you want to know more about our shop or team, <br>let us know by leaving a message.
+        </p>
+        <div><a href="#" class="btn btn-primary">Contact us</a></div>
+    </div>
+
+    <!--The taste that you will remember-->
+    <section>
+        <div class="container">
+            <div class="row text-justify">
+                <h2>The taste that you will remember</h2>
+                <div class="col-md-6">
+                    <img src="https://res.cloudinary.com/devqm7qmb/image/upload/v1653870780/cat2_cvwunp.jpg"
+                        class="rounded" alt="Cat">
+                </div>
+                <div class="col-md-6">
+                    <img src="https://res.cloudinary.com/devqm7qmb/image/upload/v1653870780/cat2_cvwunp.jpg"
+                        class="rounded" alt="Cat">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12298.793527417372!2d13.392898353342773!3d52.51163861052211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBrandenburg%20Gate!5e0!3m2!1sen!2sde!4v1654810524210!5m2!1sen!2sde"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+    <!--Adress, email, tel, open hours, social networks etc.-->
+    <footer>
+        <div class="container">
+            <div class="row text-justify">
+                <h2>Let's meet for a cup of coffee</h2>
+                <div class="col-md-4">
+                    <p>1234 Street Name<br>City, AA 99999<br>Email: info@tastycoffee.com<br>Phone: +1 (0) 000 0000 001
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>Mo - Fri: 8am - 8pm<br>Sat: 9am - 6pm<br>Sun: 9am - 4pm
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>Let’s be friends<br>
+                        <span class="fa-layers fa-fw">
+                            <i class="fa-brands fa-facebook-square"></i>
+                            <i class="fa-brands fa-twitter-square"></i>
+                            <i class="fa-brands fa-instagram-square"></i>
+                        </span>
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
 </html>
