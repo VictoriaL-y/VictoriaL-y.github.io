@@ -16,7 +16,8 @@ body {
 }
 
 .navbar-custom,
-.navbar-custom a, .navbar-custom a:visited {
+.navbar-custom a,
+.navbar-custom a:visited {
   background-color: #2D402C;
   color: #f8f5f4;
   font-family: 'Cormorant SC', 'Cormorant Garamond', serif;
@@ -26,7 +27,8 @@ body {
   padding: 1vw;
 }
 
-.navbar-custom a:hover, .navbar-custom a:focus {
+.navbar-custom a:hover,
+.navbar-custom a:focus {
   cursor: pointer;
   color: #92A780;
 }
@@ -56,7 +58,7 @@ body {
 }
 
 .carousel-item img {
-  filter:brightness(50%);
+  filter: brightness(50%);
 }
 
 .placehold-under-carousel {
@@ -71,7 +73,7 @@ body {
   color: #59372a;
 }
 
- .menu h3 {
+.menu h3 {
   margin: 8vw 0 4vw 0;
 }
 
@@ -82,20 +84,20 @@ body {
 .menu .btn {
   margin: 4vw 0 8vw 0;
   background-color: #2D402C;
-  color:#f8f5f4;
+  color: #f8f5f4;
   border: 1px solid #92A780;
 }
 
 .menu a:focus {
   background-color: #92A780;
-  color:#2D402C;
+  color: #2D402C;
   box-shadow: 2px 2px 2px 2px #2D402C;
 }
 
 .menu a:hover {
   background-color: #92A780;
-  color:#2D402C;
-  border-color:#2D402C;
+  color: #2D402C;
+  border-color: #2D402C;
 }
 
 /* Additional */
@@ -106,7 +108,8 @@ body {
 }
 
 
-.full-of-img-div img, .food-example img {
+.full-of-img-div img,
+.food-example img {
   height: 100%;
   max-width: 100%;
   object-fit: cover;
@@ -115,14 +118,17 @@ body {
 
 /* Philosophy */
 
-.philosophy .centered-into-div, .questions .centered-into-div, .food-example .centered-into-div{
+.philosophy .centered-into-div,
+.questions .centered-into-div,
+.food-example .centered-into-div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.philosophy h3, .philosophy p {
-  color:#f8f5f4;
+.philosophy h3,
+.philosophy p {
+  color: #f8f5f4;
   margin: 0;
 }
 
@@ -146,12 +152,13 @@ body {
 
 .philosophy .btn {
   background-color: #8c6a56;
-  color:white;
+  color: white;
   border: 1px solid #59372a;
 }
 
-.philosophy a:hover, .philosophy a:focus {
-  background-color:#59372a;
+.philosophy a:hover,
+.philosophy a:focus {
+  background-color: #59372a;
   color: white;
 }
 
@@ -174,10 +181,11 @@ body {
 
 .benefits {
   background-color: #f8f5f4;
-  color:#59372a;
+  color: #59372a;
 }
 
-.benefits h3, .benefits ul {
+.benefits h3,
+.benefits ul {
   margin: 0;
 }
 
@@ -193,20 +201,21 @@ body {
   list-style-type: none;
 }
 
-.benefits li:not(:last-child) { 
-  margin-bottom: 15px;  
+.benefits li:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .benefits .custom-icon {
   margin-right: 1rem;
-  color:#92A780;
+  color: #92A780;
 }
 
 
 /* Questions */
 
-.questions h3, .questions p {
-  color:#f8f5f4;
+.questions h3,
+.questions p {
+  color: #f8f5f4;
   margin: 0;
 }
 
@@ -219,17 +228,18 @@ body {
 }
 
 .questions .contact-us-button {
-  padding: 2vw 0 5vw 0;
+  padding: 0.5vw 0 5vw 0;
 }
 
 .questions .btn {
   background-color: #8c6a56;
-  color:white;
+  color: white;
   border: 1px solid #59372a;
 }
 
-.questions a:hover, .questions a:focus {
-  background-color:#59372a;
+.questions a:hover,
+.questions a:focus {
+  background-color: #59372a;
   color: white;
 }
 
@@ -246,7 +256,7 @@ body {
 
 .food-example {
   background-color: #f8f5f4;
-  color:#59372a;
+  color: #59372a;
 }
 
 .food-example h3 {
@@ -284,7 +294,9 @@ footer {
   color: #f8f5f4;
 }
 
-footer .info p, footer .open-hours p, footer .social p {
+footer .info p,
+footer .open-hours p,
+footer .social p {
   font-size: 16px;
 }
 
@@ -296,13 +308,14 @@ footer .info p, footer .open-hours p, footer .social p {
   .navbar-brand {
     position: absolute;
   }
+
   .carousel {
     margin-top: 6%;
   }
+
   .menu-items .col {
     height: 6vw;
   }
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -310,15 +323,21 @@ footer .info p, footer .open-hours p, footer .social p {
   .carousel {
     margin-top: 4%;
   }
+
   .menu-items .col {
     height: 4vw;
   }
 
-  .philosophy h3, .philosophy p, .benefits h3, .benefits ul, .questions h3, .questions p, .questions .contact-us-button {
-    font-size: 1.5rem;
+  .philosophy h3,
+  .philosophy p,
+  .benefits h3,
+  .benefits ul {
     line-height: 3vw;
   }
 
+  .food-example .centered-into-div {
+    padding-bottom: 2vw;
+  }
 }
 
 
@@ -327,15 +346,16 @@ footer .info p, footer .open-hours p, footer .social p {
   .carousel {
     margin-top: 6%;
   }
+
   .menu-items .col {
     height: 8vw;
   }
 
-  footer .info p, footer .open-hours p, footer .social p {
+  footer .info p,
+  footer .open-hours p,
+  footer .social p {
     font-size: 14px;
   }
-
-
 }
 
 @media screen and (max-width: 767px) {
@@ -343,14 +363,15 @@ footer .info p, footer .open-hours p, footer .social p {
   .carousel {
     margin-top: 7%;
   }
+
   .menu-items .col {
     height: 10vw;
   }
 
-  .food-example .matcha-img, .food-example .dessert-coffee-img {
+  .food-example .matcha-img,
+  .food-example .dessert-coffee-img {
     margin-bottom: 5vw;
   }
-
 }
 
 @media screen and (max-width: 479px) {
@@ -358,16 +379,33 @@ footer .info p, footer .open-hours p, footer .social p {
   .carousel {
     margin-top: 12%;
   }
+
   .menu-items .col {
     height: 11vw;
   }
 
-  body, .btn {
+  .philosophy .centered-into-div,
+  .benefits .centered-into-div,
+  .questions,
+  .food-example .centered-into-div {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+
+  .food-example .centered-into-div {
+    padding-bottom: 5vw;
+  }
+
+  body,
+  .btn {
     font-size: 14px;
+  }
+
+  .questions .contact-us-button {
+    padding-top: 2vw;
   }
 
   h3 {
     font-size: 16px;
   }
-
 }
