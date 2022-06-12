@@ -55,6 +55,10 @@ body {
   box-shadow: none;
 }
 
+.carousel-item img {
+  filter:brightness(50%);
+}
+
 .placehold-under-carousel {
   height: 5.5vw;
 }
@@ -343,7 +347,7 @@ footer .info p, footer .open-hours p, footer .social p {
     height: 10vw;
   }
 
-  .food-example .matcha-img {
+  .food-example .matcha-img, .food-example .dessert-coffee-img {
     margin-bottom: 5vw;
   }
 
