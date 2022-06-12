@@ -8,12 +8,15 @@ body {
   font-family: 'Cormorant Garamond', serif;
 }
 
+
+/* Navbar */
+
 .navbar-brand {
   width: max(100px, 18vw);
 }
 
 .navbar-custom,
-.navbar-custom a {
+.navbar-custom a, .navbar-custom a:visited {
   background-color: #2D402C;
   color: #f8f5f4;
   font-family: 'Cormorant SC', 'Cormorant Garamond', serif;
@@ -21,12 +24,15 @@ body {
 
 .navbar-custom {
   padding: 1vw;
-
 }
 
-.navbar-custom a:hover {
+.navbar-custom a:hover, .navbar-custom a:focus {
   cursor: pointer;
   color: #92A780;
+}
+
+.navbar-custom a:active {
+  color: white;
 }
 
 .navbar-toggler-icon {
@@ -49,47 +55,24 @@ body {
   box-shadow: none;
 }
 
-
-
-/* .bg {
-    background-image: url(https://res.cloudinary.com/devqm7qmb/image/upload/v1654820695/nathan-dumlao-JLPoB3Gahcc-unsplash_jduo9i.jpg);
-    background-repeat: no-repeat;
-    padding: 0;
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  
-  h1 {
-    top: 33%;
-  } */
-
-
-
-
-
-
 .placehold-under-carousel {
   height: 5.5vw;
 }
+
+
+/* Menu */
 
 .menu {
   background-color: #f8f5f4;
   color: #59372a;
 }
 
-.menu h3 {
+ .menu h3 {
   margin: 8vw 0 4vw 0;
 }
 
 .menu-items .col.fw-bold {
   letter-spacing: 8px;
-}
-
-
-.btn {
-  font-family: 'Cormorant SC', serif;
-  font-size: 1.25rem;
 }
 
 .menu .btn {
@@ -99,18 +82,204 @@ body {
   border: 1px solid #92A780;
 }
 
+.menu a:focus {
+  background-color: #92A780;
+  color:#2D402C;
+  box-shadow: 2px 2px 2px 2px #2D402C;
+}
+
 .menu a:hover {
-  color: #92A780;
+  background-color: #92A780;
+  color:#2D402C;
+  border-color:#2D402C;
+}
+
+/* Additional */
+
+.btn {
+  font-family: 'Cormorant SC', serif;
+  font-size: 1.25rem;
 }
 
 
-img {
+.full-of-img-div img, .food-example img {
+  height: 100%;
   max-width: 100%;
+  object-fit: cover;
 }
 
 
+/* Philosophy */
+
+.philosophy .centered-into-div, .questions .centered-into-div, .food-example .centered-into-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.philosophy h3, .philosophy p {
+  color:#f8f5f4;
+  margin: 0;
+}
+
+.philosophy h3 {
+  padding: 6vw 0 4vw 0;
+}
+
+.philosophy p {
+  padding: 0 6vw 0 6vw;
+}
+
+.philosophy .about-us-button {
+  padding: 3vw 0 6vw 0;
+}
+
+.philosophy .btn {
+  background-color: #8c6a56;
+  color:white;
+  border: 1px solid #59372a;
+}
+
+.philosophy a:hover, .philosophy a:focus {
+  background-color:#59372a;
+  color: white;
+}
+
+.philosophy a:hover {
+  border: 1px solid #8c6a56;
+}
+
+.philosophy a:focus {
+  box-shadow: 2px 2px 2px 2px #8c6a56;
+}
 
 
+/* Benefits */
+
+.benefits .centered-into-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits {
+  background-color: #f8f5f4;
+  color:#59372a;
+}
+
+.benefits h3, .benefits ul {
+  margin: 0;
+}
+
+.benefits h3 {
+  padding: 6vw 0 4vw 0;
+}
+
+.benefits ul {
+  padding: 0 6vw 6vw 6vw;
+}
+
+.benefits ul {
+  list-style-type: none;
+}
+
+.benefits li:not(:last-child) { 
+  margin-bottom: 10px;  
+}
+
+.benefits .custom-icon {
+  margin-right: 1rem;
+  color:#92A780;
+}
+
+
+/* Questions */
+
+.questions h3, .questions p {
+  color:#f8f5f4;
+  margin: 0;
+}
+
+.questions h3 {
+  padding: 5vw 0 1vw 0;
+}
+
+.questions p {
+  padding: 1vw 0 1vw 0;
+}
+
+.questions .contact-us-button {
+  padding: 2vw 0 5vw 0;
+}
+
+.questions .btn {
+  background-color: #8c6a56;
+  color:white;
+  border: 1px solid #59372a;
+}
+
+.questions a:hover, .questions a:focus {
+  background-color:#59372a;
+  color: white;
+}
+
+.questions a:hover {
+  border: 1px solid #8c6a56;
+}
+
+.questions a:focus {
+  box-shadow: 2px 2px 2px 2px #8c6a56;
+}
+
+
+/* The taste that you will remember */
+
+.food-example {
+  background-color: #f8f5f4;
+  color:#59372a;
+}
+
+.food-example h3 {
+  padding: 5vw 0 2vw 0;
+  margin-top: 3vw;
+}
+
+.food-example .food-images {
+  padding: 3vw 0 5vw 0;
+  margin-bottom: 3vw;
+  filter: drop-shadow(5px 10px 4px #59372a);
+}
+
+.food-example .matcha-img {
+  padding-right: 3vw;
+}
+
+.food-example .cakes-img {
+  padding-left: 3vw;
+}
+
+
+/* Map */
+
+.map iframe {
+  min-width: 100%;
+  min-height: 100%;
+  height: 30vw;
+}
+
+
+/* Footer */
+
+footer {
+  color: #f8f5f4;
+}
+
+footer .info p, footer .open-hours p, footer .social p {
+  font-size: 16px;
+}
+
+
+/* Meta */
 
 @media screen and (min-width: 768px) {
 
@@ -135,6 +304,11 @@ img {
     height: 4vw;
   }
 
+  .philosophy h3, .philosophy p, .benefits h3, .benefits ul, .questions h3, .questions p, .questions .contact-us-button {
+    font-size: 1.5rem;
+    line-height: 3vw;
+  }
+
 }
 
 
@@ -147,6 +321,11 @@ img {
     height: 8vw;
   }
 
+  footer .info p, footer .open-hours p, footer .social p {
+    font-size: 14px;
+  }
+
+
 }
 
 @media screen and (max-width: 767px) {
@@ -156,6 +335,10 @@ img {
   }
   .menu-items .col {
     height: 10vw;
+  }
+
+  .food-example .matcha-img {
+    margin-bottom: 5vw;
   }
 
 }
