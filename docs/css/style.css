@@ -304,6 +304,19 @@ footer .social p {
   font-size: 16px;
 }
 
+ /* Social links in footer */
+ footer a {
+  margin: 4vw 0 8vw 0;
+  /* background-color: #2D402C; */
+  color: #f8f5f4;
+}
+
+footer a:hover, footer a:focus {
+  /* background-color: #92A780; */
+  color: #92A780;
+  box-shadow: 2px 2px 2px 2px #2D402C;
+}
+
 
 /* Meta */
 
