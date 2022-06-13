@@ -120,24 +120,17 @@ footer {
     color: #f8f5f4;
 }
 
-footer .info p,
-footer .open-hours p,
-footer .social p {
-    font-size: 16px;
+/* Social links in footer */
+footer a {
+    margin: 4vw 0 8vw 0;
+    color: #f8f5f4;
 }
 
- /* Social links in footer */
- footer a {
-    margin: 4vw 0 8vw 0;
-    /* background-color: #2D402C; */
-    color: #f8f5f4;
-  }
-  
-  footer a:hover, footer a:focus {
-    /* background-color: #92A780; */
+footer a:hover,
+footer a:focus {
     color: #92A780;
     box-shadow: 2px 2px 2px 2px #2D402C;
-  }
+}
 
 
 
@@ -155,6 +148,16 @@ footer .social p {
 
     .menu-items .col {
         height: 6vw;
+    }
+
+    footer .info p,
+    footer .open-hours p,
+    footer .social p {
+        font-size: 16px;
+    }
+
+    footer .copyright {
+        font-size: 14px;
     }
 }
 

@@ -78,7 +78,8 @@ body {
 }
 
 .menu-items {
-  font-family: 'Lato', sans-serif;;
+  font-family: 'Lato', sans-serif;
+  ;
 }
 
 .menu-items .col.fw-bold {
@@ -298,21 +299,13 @@ footer {
   color: #f8f5f4;
 }
 
-footer .info p,
-footer .open-hours p,
-footer .social p {
-  font-size: 16px;
-}
-
- /* Social links in footer */
- footer a {
-  margin: 4vw 0 8vw 0;
-  /* background-color: #2D402C; */
+/* Social links in footer */
+footer a {
   color: #f8f5f4;
 }
 
-footer a:hover, footer a:focus {
-  /* background-color: #92A780; */
+footer a:hover,
+footer a:focus {
   color: #92A780;
   box-shadow: 2px 2px 2px 2px #2D402C;
 }
@@ -332,6 +325,16 @@ footer a:hover, footer a:focus {
 
   .menu-items .col {
     height: 6vw;
+  }
+
+  footer .info p,
+  footer .open-hours p,
+  footer .social p {
+    font-size: 16px;
+  }
+
+  footer .copyright {
+    font-size: 14px;
   }
 }
 
@@ -388,6 +391,16 @@ footer a:hover, footer a:focus {
   .food-example .matcha-img,
   .food-example .dessert-coffee-img {
     margin-bottom: 5vw;
+  }
+
+  footer .info p,
+  footer .open-hours p,
+  footer .social p {
+    font-size: 14px;
+  }
+
+  footer .copyright {
+    font-size: 12px;
   }
 }
 
