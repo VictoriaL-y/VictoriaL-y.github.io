@@ -57,7 +57,7 @@
     <!--Background-image-->
     <div class="container-fluid p-0 full-of-img-div top-img">
         <img src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655060964/nathan-dumlao-zUNs99PGDg0-unsplash_axuogz.jpg"
-            alt="Blurred cup of coffee" />
+            class="lazy" alt="Blurred cup of coffee" />
     </div>
 
     <!--main part of the page-->
@@ -125,8 +125,8 @@
     <!-- Map-->
     <div class="container-fluid p-0 map">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12298.793527417372!2d13.392898353342773!3d52.51163861052211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBrandenburg%20Gate!5e0!3m2!1sen!2sde!4v1654810524210!5m2!1sen!2sde"
-            style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12298.793527417372!2d13.392898353342773!3d52.51163861052211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBrandenburg%20Gate!5e0!3m2!1sen!2sde!4v1654810524210!5m2!1sen!2sde"
+            style="border:0;" class="lazy" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <!--Adress, email, tel, open hours, social networks etc.-->
@@ -152,6 +152,14 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js"></script>
+    <script type="text/javascript">
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector:".lazy"
+        // Your custom settings go here
+        });
+    </script>
 </body>
 
 </html>

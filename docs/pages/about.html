@@ -68,21 +68,21 @@
                 <p class="text-center">We work hard to give you the best</p>
                 <div class="row team">
                     <div class="col-md-4 matcha-img">
-                        <img src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655065475/mariia-zakatiura-zRT2fYSizEY-unsplash_jz3ppd.jpg"
-                            class="img-fluid rounded" alt="Girl with a glass of coffee">
+                        <img data-src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655065475/mariia-zakatiura-zRT2fYSizEY-unsplash_jz3ppd.jpg"
+                            class="img-fluid rounded lazy" alt="Girl with a glass of coffee">
                         <h5 class="fw-bold pt-3">Amanda Adams<br>Barista</h5>
                         <p class="px-3 pb-5">The coolest coffee maker you've ever found. She knows how to wow her
                             clients with a cup of fresh coffee.</p>
                     </div>
                     <div class="col-md-4 dessert-coffee-img">
-                        <img src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655065443/ian-dooley-d1UPkiFd04A-unsplash_ehnbpk.jpg"
-                            class="img-fluid rounded" alt="Guy in a hat">
+                        <img data-src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655065443/ian-dooley-d1UPkiFd04A-unsplash_ehnbpk.jpg"
+                            class="img-fluid rounded lazy" alt="Guy in a hat">
                         <h5 class="fw-bold pt-3">John Smith<br>Musician</h5>
                         <p class="px-3 pb-5">He creates the best mood in the "Coffee shop" cafe and makes you happy.</p>
                     </div>
                     <div class="col-md-4 cakes-img">
-                        <img src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655065401/soheil-kmp-qwwImY1plsE-unsplash_w9qd4c.jpg"
-                            class="img-fluid rounded" alt="Sitting girl with headscarf">
+                        <img data-src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655065401/soheil-kmp-qwwImY1plsE-unsplash_w9qd4c.jpg"
+                            class="img-fluid rounded lazy" alt="Sitting girl with headscarf">
                         <h5 class="fw-bold pt-3">Ashley Cage<br>Purchasing Officer</h5>
                         <p class="px-3 pb-5">She knows exactly what you want and will offer the coffee for your taste.
                         </p>
@@ -95,8 +95,8 @@
     <!-- Map-->
     <div class="container-fluid p-0 map">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12298.793527417372!2d13.392898353342773!3d52.51163861052211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBrandenburg%20Gate!5e0!3m2!1sen!2sde!4v1654810524210!5m2!1sen!2sde"
-            style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12298.793527417372!2d13.392898353342773!3d52.51163861052211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBrandenburg%20Gate!5e0!3m2!1sen!2sde!4v1654810524210!5m2!1sen!2sde"
+            style="border:0;" class="lazy" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <!--Adress, email, tel, open hours, social networks etc.-->
@@ -122,6 +122,14 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js"></script>
+    <script type="text/javascript">
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector:".lazy"
+        // Your custom settings go here
+        });
+    </script>
 </body>
 
 </html>

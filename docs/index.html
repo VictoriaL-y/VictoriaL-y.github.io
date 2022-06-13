@@ -145,8 +145,8 @@
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-md-6 p-0 full-of-img-div">
-                    <img src="https://res.cloudinary.com/devqm7qmb/image/upload/v1654980936/nathan-dumlao-z3em1GBRhvY-unsplash_kdnilo.jpg"
-                        class="img-fluid" alt="Coffee with croassants" />
+                    <img data-src="https://res.cloudinary.com/devqm7qmb/image/upload/v1654980936/nathan-dumlao-z3em1GBRhvY-unsplash_kdnilo.jpg"
+                        class="img-fluid lazy" alt="Coffee with croassants" />
                 </div>
                 <div class="col-md-6 centered-into-div">
                     <div class="container">
@@ -184,8 +184,8 @@
                     </div>
                 </div>
                 <div class="col-md-6 p-0 full-of-img-div">
-                    <img src="https://res.cloudinary.com/devqm7qmb/image/upload/v1654989840/ceyda-ciftci--ylyzFOEBS0-unsplash_lonybx.jpg"
-                        class="img-fluid" alt="Caffee">
+                    <img data-src="https://res.cloudinary.com/devqm7qmb/image/upload/v1654989840/ceyda-ciftci--ylyzFOEBS0-unsplash_lonybx.jpg"
+                        class="img-fluid lazy" alt="Caffee">
                 </div>
             </div>
         </div>
@@ -210,16 +210,16 @@
                 <h3 class="text-center fw-bold">The taste that you will remember</h3>
                 <div class="row food-images">
                     <div class="col-md-4 matcha-img">
-                        <img src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655001176/jason-leung-Z-hvocTfR_s-unsplash_njuhnl.jpg"
-                            class="img-fluid rounded" alt="Matcha Latte">
+                        <img data-src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655001176/jason-leung-Z-hvocTfR_s-unsplash_njuhnl.jpg"
+                            class="img-fluid rounded lazy" alt="Matcha Latte">
                     </div>
                     <div class="col-md-4 dessert-coffee-img">
-                        <img src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655051950/nathan-dumlao-gOn7dKcCWKg-unsplash_o9yi3i.jpg"
-                            class="img-fluid rounded" alt="Coffee with dessert">
+                        <img data-src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655051950/nathan-dumlao-gOn7dKcCWKg-unsplash_o9yi3i.jpg"
+                            class="img-fluid rounded lazy" alt="Coffee with dessert">
                     </div>
                     <div class="col-md-4 cakes-img">
-                        <img src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655001470/noman-shahid-tpZvQMwpKDI-unsplash_dlo9ro.jpg"
-                            class="img-fluid rounded" alt="Cakes">
+                        <img data-src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655001470/noman-shahid-tpZvQMwpKDI-unsplash_dlo9ro.jpg"
+                            class="img-fluid rounded lazy" alt="Cakes">
                     </div>
                 </div>
             </div>
@@ -229,8 +229,8 @@
     <!-- Map-->
         <div class="container-fluid p-0 map">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12298.793527417372!2d13.392898353342773!3d52.51163861052211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBrandenburg%20Gate!5e0!3m2!1sen!2sde!4v1654810524210!5m2!1sen!2sde"
-                style="border:0;" allowfullscreen loading="lazy"
+                data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12298.793527417372!2d13.392898353342773!3d52.51163861052211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBrandenburg%20Gate!5e0!3m2!1sen!2sde!4v1654810524210!5m2!1sen!2sde"
+                style="border:0;" class="lazy" allowfullscreen loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
@@ -257,6 +257,15 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js"></script>
+    <script type="text/javascript">
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector:".lazy"
+        // Your custom settings go here
+        });
+    </script>
 </body>
 
 </html>
