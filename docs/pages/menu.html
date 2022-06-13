@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <title>Menu - Coffee shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Scripts Jquery, Poppers.js, Bootstrap.js-->
+    <script defer src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+        integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/0f00023ff0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-custom">
+        <div class="container-fluid">
+            <span class="navbar-brand me-auto"><i class="fa-brands fa-envira"></i>Coffee shop</span>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mx-md-auto">
+                    <li class="nav-item me-4">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-info">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Background-image-->
+    <div class="container-fluid p-0 full-of-img-div top-img">
+        <img src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655060964/nathan-dumlao-zUNs99PGDg0-unsplash_axuogz.jpg"
+            alt="Blurred cup of coffee" />
+    </div>
+
+    <!--main part of the page-->
+    <section class="menu">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <h3 class="fw-bold">MENU</h3>
+                <div class="col-md-6 menu-items">
+                    <div class="row row-cols-2">
+                        <div class="col"><i class="fa-solid fa-mug-saucer"></i></div>
+                        <div class="col fw-bold ">S , M, L</div>
+                        <div class="col">~Espresso~</div>
+                        <div class="col">2.00$, 2.70$<span class="invisible-text">, 0,00$</span></div>
+                        <div class="col">~Espresso Macchiato~</div>
+                        <div class="col">2.10$, 2.80$<span class="invisible-text">, 0,00$</span></div>
+                        <div class="col">~Caramel Macchiato~</div>
+                        <div class="col">3.00$, 3.70$, 4.30$</div>
+                        <div class="col">~Cappuccino~</div>
+                        <div class="col">2.90$, 3.50$, 3.90$</div>
+                        <div class="col">~Vanilla latte~</div>
+                        <div class="col">2.90$, 3.50$, 3.90$</div>
+                        <div class="col">~Matcha Latte~</div>
+                        <div class="col">3.30$, 4.00$, 4.60$</div>
+                        <div class="col">~Tea~</div>
+                        <div class="col">2.40$, 2.60$, 2.80$</div>
+                        <div class="col">~Hot Chocolate~</div>
+                        <div class="col">3.00$, 3.30$, 3.60$</div>
+                        <div class="col">~Hot White Chocolate~</div>
+                        <div class="col">3.00$, 3.30$, 3.60$</div>
+                        <div class="col">~Chai Latte~</div>
+                        <div class="col">2.80$, 3.10$, 3.40$</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 menu-items second-column">
+                    <div class="row row-cols-2">
+                        <div class="col custom-icon"><i class="fa-solid fa-whiskey-glass"></i></div>
+                        <div class="col fw-bold custom-icon">S , M, L</div>
+                        <div class="col">~Iced Cappuccino~</div>
+                        <div class="col">2.90$, 3.50$, 3.90$</div>
+                        <div class="col">~Iced Latte~</div>
+                        <div class="col">2.90$, 3.50$, 3.90$</div>
+                        <div class="col">~Iced Mocha~</div>
+                        <div class="col">3.30$, 4.00$, 4.60$</div>
+                        <div class="col custom-icon"><i class="fa-solid fa-utensils"></i></div>
+                        <div class="col"></div>
+                        <div class="col">~Cheesecake "New York"~</div>
+                        <div class="col">5.00$</div>
+                        <div class="col">~Cheesecake with Jam~</div>
+                        <div class="col">5.20$</div>
+                        <div class="col">~Croissant~</div>
+                        <div class="col">2.00$</div>
+                        <div class="col">~Chocolate Croissant~</div>
+                        <div class="col">2.70$</div>
+                        <div class="col">~Apple Pie~</div>
+                        <div class="col">3.20$</div>
+                        <div class="col">~Puff Patties Cottage~</div>
+                        <div class="col">3.00$</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map-->
+    <div class="container-fluid p-0 map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12298.793527417372!2d13.392898353342773!3d52.51163861052211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBrandenburg%20Gate!5e0!3m2!1sen!2sde!4v1654810524210!5m2!1sen!2sde"
+            style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!--Adress, email, tel, open hours, social networks etc.-->
+    <footer id="contact-info">
+        <div class="container-fluid">
+            <div class="row my-5 text-center">
+                <div class="col-md-4 mx-auto info">
+                    <p>1234 Street Name<br>City, AA 99999<br><br>Email: info@tastycoffee.com<br>Phone: +1 (0) 000
+                        0000 001</p>
+                </div>
+                <div class="col-md-4 mx-auto open-hours">
+                    <p class="fw-bold">Let's be friends<br><br>
+                        <span class="fa-layers fa-fw">
+                            <i class="fa-brands fa-facebook-square"></i>
+                            <i class="fa-brands fa-twitter-square"></i>
+                            <i class="fa-brands fa-instagram-square"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-md-4 mx-auto social text-center">
+                    <p>Open hours<br><br>Mo - Fri: 8am - 8pm<br>Sat: 9am - 6pm<br>Sun: 9am - 4pm</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
