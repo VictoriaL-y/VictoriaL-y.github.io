@@ -99,7 +99,8 @@ body {
   box-shadow: 2px 2px 2px 2px #2D402C;
 }
 
-.menu a:hover {
+.menu a:hover,
+.menu a:active {
   background-color: #92A780;
   color: #2D402C;
   border-color: #2D402C;
@@ -243,7 +244,8 @@ body {
 }
 
 .questions a:hover,
-.questions a:focus {
+.questions a:focus,
+.questions a:active {
   background-color: #59372a;
   color: white;
 }
@@ -305,7 +307,8 @@ footer a {
 }
 
 footer a:hover,
-footer a:focus {
+footer a:focus,
+footer a:active {
   color: #92A780;
   box-shadow: 2px 2px 2px 2px #2D402C;
 }

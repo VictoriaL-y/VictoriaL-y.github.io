@@ -113,16 +113,17 @@ footer {
     color: #f8f5f4;
 }
 
- /* Social links in footer */
- footer a {
+/* Social links in footer */
+footer a {
     margin: 4vw 0 8vw 0;
     color: #f8f5f4;
-  }
-  
-  footer a:hover, footer a:focus {
+}
+
+footer a:hover,
+footer a:focus {
     color: #92A780;
     box-shadow: 2px 2px 2px 2px #2D402C;
-  }
+}
 
 
 /* Meta */
@@ -140,11 +141,11 @@ footer {
     footer .info p,
     footer .open-hours p,
     footer .social p {
-      font-size: 16px;
+        font-size: 16px;
     }
-  
+
     footer .copyright {
-      font-size: 14px;
+        font-size: 14px;
     }
 }
 
