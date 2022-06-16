@@ -57,20 +57,13 @@ body {
     box-shadow: none;
 }
 
-.top-img img {
-    filter: brightness(50%);
-}
-
 /* Images, Buttons */
 
-img {
-    max-width: 100%;
-}
-
-.full-of-img-div img {
+.top-img img {
     height: 100%;
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
+    filter: brightness(50%);
 }
 
 .btn {

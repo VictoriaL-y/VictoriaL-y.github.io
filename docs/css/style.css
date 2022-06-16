@@ -114,10 +114,9 @@ body {
 }
 
 
-.full-of-img-div img,
-.food-example img {
+.full-of-img-div img, .food-example img {
   height: 100%;
-  max-width: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
