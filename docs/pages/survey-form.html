@@ -22,7 +22,8 @@
 
                 <!-- Disable Captcha -->
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://victorial-y.github.io/pages/survey-form.html/success.html">
+                <input type="hidden" name="_next"
+                    value="https://victorial-y.github.io/pages/survey-form.html/success.html">
 
                 <fieldset>
                     <div>
@@ -36,7 +37,7 @@
                     <label id="number-label">Age (optional) <input id="number" name="Age" type="number" min="13"
                             max="120" placeholder="Age" /></label>
                     <label>How did you know about us?
-                        <select name="How&nbsp;did&nbsp;you&nbsp;know&nbsp;about&nbsp;us?" id="dropdown">
+                        <select name="How&nbsp;did&nbsp;you&nbsp;know&nbsp;about&nbsp;us?" id="dropdown" required>
                             <option value="">(select one)</option>
                             <option value="internet">internet</option>
                             <option value="friends">friends</option>
@@ -48,12 +49,13 @@
                     <lable>Would you recommend "Coffee shop" to a friend? </lable>
                     <label><input type="radio" name="Would&nbsp;you&nbsp;reccomend?" value="yes" class="inline" />
                         Yes</label>
-                    <label><input type="radio" name="Would&nbsp;you&nbsp;reccomend?" value="no" class="inline" />
+                    <label><input type="radio" name="Would&nbsp;you&nbsp;reccomend?" value="no" class="inline"
+                            required />
                         No</label>
                 </fieldset>
                 <fieldset>
                     <label>What do you the most like in "Coffee shop"?
-                        <select name="Most&nbsp;like">
+                        <select name="Most&nbsp;like" required>
                             <option value="">(select one)</option>
                             <option value="Hot&nbsp;drinks">Hot drinks</option>
                             <option value="Cold&nbsp;drinks">Cold drinks</option>
@@ -62,7 +64,7 @@
                     </label>
                 </fieldset>
                 <fieldset>
-                    <label> What would you like to see improved? (Check all that apply)</label>
+                    <label> What would you like to see improved? (optional)</label>
                     <label><input type="checkbox" name="What&nbsp;to&nbsp;improve" value="Service" class="inline" />
                         Service</label>
                     <label><input type="checkbox" name="What&nbsp;to&nbsp;improve" value="Cleanliness" class="inline" />
@@ -74,7 +76,7 @@
                         Prices</label>
                 </fieldset>
                 <fieldset>
-                    <label>Any comments or suggestions?:
+                    <label>Any comments or suggestions? (optional):
                         <textarea name="Comments" rows="3" cols="30"
                             placeholder="Enter your comment here..."></textarea>
                     </label>
