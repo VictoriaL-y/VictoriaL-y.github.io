@@ -19,12 +19,14 @@ p {
 }
 
 h1 {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1.6em;
+    padding-bottom: 0.6em;
+    font-size: 1.5em;
 }
 
 p {
-    padding-bottom: 2em;
+    padding-bottom: 1.6em;
+    font-size: 0.9em;
 }
 
 form {
@@ -116,8 +118,7 @@ input[type="submit"].btn:focus {
 @media screen and (max-width: 479px){
 
     p {
-        padding-bottom: 2em;
-        font-size: 0.9rem;
+        font-size: 0.84rem;
     }
     
 }
