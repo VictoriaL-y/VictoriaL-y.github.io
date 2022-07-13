@@ -78,8 +78,8 @@ body {
 
 /* Menu */
 
-.menu {
-  background: linear-gradient(rgba(248, 245, 244, 0.4), rgba(248, 245, 244, 0.4)), url(https://res.cloudinary.com/devqm7qmb/image/upload/v1657646872/olga-thelavart-vS3idIiYxX0-unsplash_rtnuhm.jpg);
+.menu, .benefits, .food-example {
+  background: linear-gradient(rgba(248, 245, 244, 0.4), rgba(248, 245, 244, 0.4)), url(https://res.cloudinary.com/devqm7qmb/image/upload/c_scale,h_2968,q_41/v1657646872/olga-thelavart-vS3idIiYxX0-unsplash_rtnuhm.jpg);
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -201,14 +201,6 @@ body {
   align-items: center;
 }
 
-.benefits {
-  background: linear-gradient(rgba(248, 245, 244, 0.4), rgba(248, 245, 244, 0.4)), url(https://res.cloudinary.com/devqm7qmb/image/upload/v1657646872/olga-thelavart-vS3idIiYxX0-unsplash_rtnuhm.jpg);
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #59372a;
-}
-
 .benefits h3,
 .benefits ul {
   margin: 0;
@@ -283,14 +275,6 @@ body {
 
 
 /* The taste that you will remember */
-
-.food-example {
-  background: linear-gradient(rgba(248, 245, 244, 0.4), rgba(248, 245, 244, 0.4)), url(https://res.cloudinary.com/devqm7qmb/image/upload/v1657646872/olga-thelavart-vS3idIiYxX0-unsplash_rtnuhm.jpg);
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #59372a;
-}
 
 .food-example h3 {
   padding: 6vw 0 3vw 0;
