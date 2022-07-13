@@ -16,7 +16,14 @@
     <div class="caseForContent">
         <div class="container-fluid containerForContent">
 
-            <form action="https://formsubmit.co/763f8e6d8a3a7b319c02ba648280f146" method = "POST">
+            <form action="https://formsubmit.co/763f8e6d8a3a7b319c02ba648280f146" method="POST">
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display: none;">
+
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://victorial-y.github.io/pages/survey-form.html/success.html">
+
                 <fieldset>
                     <div>
                         <h1 id="title">SURVEY FORM</h1>
@@ -24,46 +31,51 @@
                     </div>
                     <label id="name-label">Name <input id="name" name="Name" type="text" placeholder="Enter your name"
                             required /></label>
-                    <label id="email-label">Email <input id="email" name="Email" type="email" placeholder="Enter your Email"
-                            required /></label>
-                    <label id="number-label">Age (optional) <input id="number" name="Age" type="number" min="13" max="120"
-                            placeholder="Age" /></label>
+                    <label id="email-label">Email <input id="email" name="Email" type="email"
+                            placeholder="Enter your Email" required /></label>
+                    <label id="number-label">Age (optional) <input id="number" name="Age" type="number" min="13"
+                            max="120" placeholder="Age" /></label>
                     <label>How did you know about us?
-                        <select id="dropdown">
-                            <option name="Know&nbsp;about&nbsp;us" value="">(select one)</option>
-                            <option name="Know&nbsp;about&nbsp;us" value="internet">internet</option>
-                            <option name="Know&nbsp;about&nbsp;us" value="friends">friends</option>
-                            <option name="Know&nbsp;about&nbsp;us" value="other">other</option>
+                        <select name="How&nbsp;did&nbsp;you&nbsp;know&nbsp;about&nbsp;us?" id="dropdown">
+                            <option value="">(select one)</option>
+                            <option value="internet">internet</option>
+                            <option value="friends">friends</option>
+                            <option value="other">other</option>
                         </select>
                     </label>
                 </fieldset>
                 <fieldset>
                     <lable>Would you recommend "Coffee shop" to a friend? </lable>
-                    <label><input type="radio" name="Would&nbsp;you&nbsp;reccomend" value="yes" class="inline" /> Yes</label>
-                    <label><input type="radio" name="Would&nbsp;you&nbsp;reccomend" value="no" class="inline" /> No</label>
+                    <label><input type="radio" name="Would&nbsp;you&nbsp;reccomend?" value="yes" class="inline" />
+                        Yes</label>
+                    <label><input type="radio" name="Would&nbsp;you&nbsp;reccomend?" value="no" class="inline" />
+                        No</label>
                 </fieldset>
                 <fieldset>
                     <label>What do you the most like in "Coffee shop"?
-                        <select name="favorite-item">
-                            <option name="Most&nbsp;like" value="">(select one)</option>
-                            <option name="Most&nbsp;like" value="Hot">Hot drinks</option>
-                            <option name="Most&nbsp;like" value="Cold">Cold drinks</option>
-                            <option name="Most&nbsp;like" value="Desserts">Desserts</option>
+                        <select name="Most&nbsp;like">
+                            <option value="">(select one)</option>
+                            <option value="Hot&nbsp;drinks">Hot drinks</option>
+                            <option value="Cold&nbsp;drinks">Cold drinks</option>
+                            <option value="Desserts">Desserts</option>
                         </select>
                     </label>
                 </fieldset>
                 <fieldset>
                     <label> What would you like to see improved? (Check all that apply)</label>
-                    <label><input type="checkbox" name="improvements" value="service" class="inline" /> Service</label>
-                    <label><input type="checkbox" name="improvements" value="cleanliness" class="inline" />
+                    <label><input type="checkbox" name="What&nbsp;to&nbsp;improve" value="Service" class="inline" />
+                        Service</label>
+                    <label><input type="checkbox" name="What&nbsp;to&nbsp;improve" value="Cleanliness" class="inline" />
                         Cleanliness</label>
-                    <label><input type="checkbox" name="improvements" value="food-quality" class="inline" /> Food
+                    <label><input type="checkbox" name="What&nbsp;to&nbsp;improve" value="Food&nbsp;quality"
+                            class="inline" /> Food
                         quality</label>
-                    <label><input type="checkbox" name="improvements" value="prices" class="inline" /> Prices</label>
+                    <label><input type="checkbox" name="What&nbsp;to&nbsp;improve" value="Prices" class="inline" />
+                        Prices</label>
                 </fieldset>
                 <fieldset>
                     <label>Any comments or suggestions?:
-                        <textarea name="comments" rows="3" cols="30"
+                        <textarea name="Comments" rows="3" cols="30"
                             placeholder="Enter your comment here..."></textarea>
                     </label>
 
