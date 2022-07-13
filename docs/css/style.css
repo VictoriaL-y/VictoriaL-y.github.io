@@ -3,8 +3,7 @@
 }
 
 body {
-  background-color: #2D402C;
-  font-size: 1.25rem;
+  background-color: #2d402c;
   font-family: 'Cormorant Garamond', serif;
 }
 
@@ -65,11 +64,25 @@ body {
   height: 5.5vw;
 }
 
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  color: #59372a;
+  background-color: #f8f5f4;
+  border: 1px solid #92A780;
+  z-index: 99;
+}
+
 
 /* Menu */
 
 .menu {
-  background-color: #f8f5f4;
+  background: linear-gradient(rgba(248, 245, 244, 0.4), rgba(248, 245, 244, 0.4)), url(https://res.cloudinary.com/devqm7qmb/image/upload/v1657646872/olga-thelavart-vS3idIiYxX0-unsplash_rtnuhm.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #59372a;
 }
 
@@ -114,7 +127,7 @@ body {
 }
 
 
-.full-of-img-div img, .food-example img {
+.full-of-img-div img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -122,6 +135,10 @@ body {
 
 
 /* Philosophy */
+
+.philosophy {
+  background-color: #2D402C;
+}
 
 .philosophy .centered-into-div,
 .questions .centered-into-div,
@@ -185,7 +202,10 @@ body {
 }
 
 .benefits {
-  background-color: #f8f5f4;
+  background: linear-gradient(rgba(248, 245, 244, 0.4), rgba(248, 245, 244, 0.4)), url(https://res.cloudinary.com/devqm7qmb/image/upload/v1657646872/olga-thelavart-vS3idIiYxX0-unsplash_rtnuhm.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #59372a;
 }
 
@@ -217,6 +237,10 @@ body {
 
 
 /* Questions */
+
+.questions {
+  background-color: #2D402C;
+}
 
 .questions h3,
 .questions p {
@@ -261,36 +285,28 @@ body {
 /* The taste that you will remember */
 
 .food-example {
-  background-color: #f8f5f4;
+  background: linear-gradient(rgba(248, 245, 244, 0.4), rgba(248, 245, 244, 0.4)), url(https://res.cloudinary.com/devqm7qmb/image/upload/v1657646872/olga-thelavart-vS3idIiYxX0-unsplash_rtnuhm.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #59372a;
 }
 
 .food-example h3 {
-  padding: 5vw 0 2vw 0;
-  margin-top: 3vw;
+  padding: 6vw 0 3vw 0;
 }
 
-.food-example .food-images {
-  padding: 3vw 0 5vw 0;
-  margin-bottom: 3vw;
-  filter: drop-shadow(5px 10px 4px #59372a);
+.food-example p {
+  padding: 2vh 0 0 0;
 }
-
-.food-example .matcha-img {
-  padding-right: 3vw;
-}
-
-.food-example .cakes-img {
-  padding-left: 3vw;
-}
-
 
 /* Map */
 
 .map iframe {
   min-width: 100%;
   min-height: 100%;
-  height: 30vw;
+  height: 25vh;
+  display: block;
 }
 
 
@@ -298,11 +314,13 @@ body {
 
 footer {
   color: #f8f5f4;
+  background-color: #2D402C;
 }
 
 /* Social links in footer */
 footer a {
   color: #f8f5f4;
+  text-decoration: none;
 }
 
 footer a:hover,
@@ -326,7 +344,7 @@ footer a:active {
   }
 
   .menu-items .col {
-    height: 6vw;
+    height: 6vh;
   }
 
   footer .info p,
@@ -340,7 +358,7 @@ footer a:active {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
 
   .carousel {
     margin-top: 4%;
@@ -360,6 +378,40 @@ footer a:active {
   .food-example .centered-into-div {
     padding-bottom: 2vw;
   }
+
+  .map iframe {
+    height: 30vw;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+
+  .navbar {
+    font-size: 1.25rem;
+  }
+
+  .caseForContent {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-size: 1.5rem;
+  }
+
+  body {
+    background: linear-gradient(rgba(45, 64, 44, 0.8), rgba(45, 64, 44, 0.8));
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  .map iframe {
+    height: 20vw;
+  }
+
+  .food-example p {
+    padding: 2vw 0 1vw 0;
+  }
+
 }
 
 
@@ -424,10 +476,6 @@ footer a:active {
     padding-bottom: 3vw;
   }
 
-  .food-example .centered-into-div {
-    padding-bottom: 5vw;
-  }
-
   body,
   .btn {
     font-size: 14px;
@@ -443,5 +491,9 @@ footer a:active {
 
   h3 {
     font-size: 16px;
+  }
+
+  .food-example h3 {
+    padding: 10vw 0 6vw 0;
   }
 }

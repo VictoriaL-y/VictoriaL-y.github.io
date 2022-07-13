@@ -16,47 +16,52 @@
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md fixed-top navbar-custom">
-        <div class="container-fluid">
-            <span class="navbar-brand me-auto"><i class="fa-brands fa-envira"></i>Coffee shop</span>
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav mx-md-auto">
-                    <li class="nav-item me-4">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item me-4">
-                        <a class="nav-link" href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item me-4">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact-info">Contact Us</a>
-                    </li>
-                </ul>
+    <div class="caseForContent m-0 p-0">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md fixed-top navbar-custom">
+            <div class="container-fluid">
+                <span class="navbar-brand me-auto"><i class="fa-brands fa-envira"></i>Coffee shop</span>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mx-md-auto">
+                        <li class="nav-item me-4">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-info">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+
+        <!--Background-image-->
+        <div class="container-fluid p-0 top-img">
+            <img data-src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655126263/nathan-dumlao-zUNs99PGDg0-unsplash_axuogz.jpg"
+                class="lazy" alt="Blurred cup of coffee" />
         </div>
-    </nav>
 
-    <!--Background-image-->
-    <div class="container-fluid p-0 top-img">
-        <img data-src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655126263/nathan-dumlao-zUNs99PGDg0-unsplash_axuogz.jpg"
-            class="lazy" alt="Blurred cup of coffee" />
-    </div>
+        <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
 
-    <!--main part of the page-->
-    <section class="main-content">
-        <div class="container-fluid text-center centered-into-div">
-            <div class="container">
+        <!--main part of the page-->
+        <section class="main-content">
+            <div class="container-fluid text-center">
                 <h3 class="text-center fw-bold">MEET OUR TEAM</h3>
                 <p class="text-center">We work hard to give you the best</p>
-                <div class="row team">
+                <div class="row team ms-4 me-4">
                     <div class="col-md-4 matcha-img">
                         <img data-src="https://res.cloudinary.com/devqm7qmb/image/upload/v1655065475/mariia-zakatiura-zRT2fYSizEY-unsplash_jz3ppd.jpg"
                             class="img-fluid rounded lazy" alt="Girl with a glass of coffee">
@@ -79,21 +84,21 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Map-->
-    <div class="container-fluid p-0 map">
-        <iframe
-            data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12298.793527417372!2d13.392898353342773!3d52.51163861052211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBrandenburg%20Gate!5e0!3m2!1sen!2sde!4v1654810524210!5m2!1sen!2sde"
-            style="border:0;" class="lazy" allowfullscreen loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Map-->
+        <div class="container-fluid p-0 map">
+            <iframe
+                data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12298.793527417372!2d13.392898353342773!3d52.51163861052211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBrandenburg%20Gate!5e0!3m2!1sen!2sde!4v1654810524210!5m2!1sen!2sde"
+                style="border:0;" class="lazy" allowfullscreen loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
 
     <!--Adress, email, tel, open hours, social networks etc.-->
     <footer id="contact-info">
         <div class="container-fluid">
-            <div class="row my-5 text-center">
+            <div class="row py-5 text-center">
                 <div class="col-md-4 mx-auto info">
                     <p>1234 Street Name<br>City, AA 99999<br><br>Email: info@tastycoffee.com<br>Phone: +1 (0) 000
                         0000 001</p>
@@ -108,6 +113,7 @@
                             <a href="https://www.instagram.com/" target="_blank"><i
                                     class="fa-brands fa-instagram-square"></i></a>
                         </span>
+                        <p class="py-4"><a href="../pages/survey-form.html" target="_blank"></i><strong>Feedback! </strong><i class="fa-solid fa-file-pen"></i></a></p>
                     </p>
                 </div>
                 <div class="col-md-4 mx-auto social text-center">
@@ -138,7 +144,8 @@
             // Your custom settings go here
         });
     </script>
-    
+    <script src="../js/script.js"></script>
+
 </body>
 
 </html>

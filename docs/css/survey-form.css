@@ -1,0 +1,110 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    background: linear-gradient(rgba(248, 245, 244, 0.4), rgba(248, 245, 244, 0.4)), url(https://res.cloudinary.com/devqm7qmb/image/upload/v1657646872/olga-thelavart-vS3idIiYxX0-unsplash_rtnuhm.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: repeat;
+    font-family: 'Cormorant SC', serif;
+
+}
+
+
+
+h1,
+p {
+    text-align: center;
+    color: #59372a;
+}
+
+h1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+p {
+    padding-bottom: 2em;
+}
+
+form {
+    width: 80vw;
+    max-width: 700px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    background-color: #ffffff;
+    /* border-bottom: 2px solid #8c6a56; */
+    padding: 2rem 2rem;
+    color: #59372a;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    color: #59372a;
+    border: 1px solid #8c6a56;
+    font-family: 'Cormorant SC', serif;
+    border-radius: 7px;
+}
+
+.inline {
+    width: unset;
+    margin: -1% 0.5em 0 0;
+    vertical-align: middle;
+
+}
+
+input[type="submit"].btn:hover,
+input[type="submit"].btn:focus {
+    background-color: #59372a;
+    color: white;
+}
+
+input[type="submit"].btn:hover {
+    border: 1px solid #8c6a56;
+}
+
+input[type="submit"].btn:focus {
+    box-shadow: 2px 2px 2px 2px #8c6a56;
+}
+
+.btn {
+    margin: 1em auto;
+    background-color: #8c6a56;
+    color: white;
+    border: 1px solid #59372a;
+    margin: 1em auto;
+    display: block;
+    width: 14vh;
+    font-size: 1em;
+}
+
+@media screen and (min-width: 2000px) {
+
+    .caseForContent {
+        background: linear-gradient(rgba(248, 245, 244, 0.4), rgba(248, 245, 244, 0.4)), url(https://res.cloudinary.com/devqm7qmb/image/upload/v1657646872/olga-thelavart-vS3idIiYxX0-unsplash_rtnuhm.jpg);
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        font-size: 1.5rem;
+    }
+
+    body {
+        background: linear-gradient(rgba(45, 64, 44, 0.8), rgba(45, 64, 44, 0.8));
+    }
+}
