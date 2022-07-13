@@ -40,7 +40,6 @@ form {
 
 fieldset {
     background-color: #ffffff;
-    /* border-bottom: 2px solid #8c6a56; */
     padding: 2rem 2rem;
     color: #59372a;
 }
@@ -94,6 +93,17 @@ input[type="submit"].btn:focus {
     font-size: 1em;
 }
 
+/* Additional for succeess page */
+
+fieldset a {
+    color: #59372a;
+}
+
+fieldset a:hover,
+fieldset a:focus {
+    color: #8c6a56;
+}
+
 @media screen and (min-width: 2000px) {
 
     .caseForContent {
@@ -118,7 +128,6 @@ input[type="submit"].btn:focus {
 @media screen and (max-width: 479px){
 
     p {
-        font-size: 0.84rem;
-    }
-    
+        font-size: 0.8rem;
+    }  
 }

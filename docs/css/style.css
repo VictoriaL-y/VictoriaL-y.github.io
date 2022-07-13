@@ -451,6 +451,10 @@ footer a:active {
     margin-top: 12%;
   }
 
+  .carousel-item img {
+    filter: brightness(100%);
+  }
+
   .menu-items .col {
     height: 11vw;
   }
