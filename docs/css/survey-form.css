@@ -10,8 +10,6 @@ body {
 
 }
 
-
-
 h1,
 p {
     text-align: center;
@@ -68,6 +66,11 @@ select {
 
 }
 
+.submitBtn {
+    width: 12vh;
+    margin: auto auto;
+}
+
 input[type="submit"].btn:hover,
 input[type="submit"].btn:focus {
     background-color: #59372a;
@@ -87,10 +90,10 @@ input[type="submit"].btn:focus {
     background-color: #8c6a56;
     color: white;
     border: 1px solid #59372a;
-    margin: 1em auto;
     display: block;
-    width: 14vh;
-    font-size: 1em;
+    width: 100%;
+    padding: 0;
+    font-size: 0.98em;
 }
 
 /* Additional for succeess page */
@@ -125,9 +128,9 @@ fieldset a:focus {
     }
 }
 
-@media screen and (max-width: 479px){
+@media screen and (max-width: 479px) {
 
     p {
         font-size: 0.8rem;
-    }  
+    }
 }
