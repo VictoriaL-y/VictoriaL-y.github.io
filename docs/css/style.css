@@ -64,19 +64,8 @@ body {
   height: 5.5vw;
 }
 
-#btn-back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  color: #59372a;
-  background-color: #f8f5f4;
-  border: 1px solid #92A780;
-  z-index: 99;
-}
 
-
-/* Menu */
+/* Additional, general */
 
 .menu,
 .benefits,
@@ -88,9 +77,84 @@ body {
   color: #59372a;
 }
 
-.menu h3 {
-  margin: 8vw 0 4vw 0;
+.philosophy .centered-into-div,
+.questions .centered-into-div,
+.food-example .centered-into-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.questions,
+.philosophy,
+footer {
+  background-color: #2D402C;
+  color: #f8f5f4;
+}
+
+.menu h2,
+.philosophy h2,
+.benefits h2,
+.food-example h2 {
+  padding: 6vw 0 2vw 0;
+  font-size: 1.25em;
+}
+
+
+/* Buttons */
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  color: #59372a;
+  background-color: #f8f5f4;
+  border: 1px solid #92A780;
+  z-index: 99;
+}
+
+.btn {
+  font-family: 'Cormorant SC', serif;
+  font-size: 1rem;
+}
+
+.philosophy .btn,
+.questions .btn {
+  background-color: #8c6a56;
+  color: white;
+  border: 1px solid #59372a;
+}
+
+.philosophy a:hover,
+.philosophy a:focus,
+.philosophy a:active,
+.questions a:hover,
+.questions a:focus,
+.questions a:active {
+  background-color: #59372a;
+  color: white;
+}
+
+.philosophy a:hover,
+.questions a:hover {
+  border: 1px solid #8c6a56;
+}
+
+.philosophy a:focus,
+.questions a:focus {
+  box-shadow: 2px 2px 2px 2px #8c6a56;
+}
+
+
+.full-of-img-div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* Menu */
 
 .menu-items {
   font-family: 'Lato', sans-serif;
@@ -121,43 +185,8 @@ body {
   border-color: #2D402C;
 }
 
-/* Additional */
-
-.btn {
-  font-family: 'Cormorant SC', serif;
-  font-size: 1.25rem;
-}
-
-
-.full-of-img-div img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
 
 /* Philosophy */
-
-.philosophy {
-  background-color: #2D402C;
-}
-
-.philosophy .centered-into-div,
-.questions .centered-into-div,
-.food-example .centered-into-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.philosophy h3,
-.philosophy p {
-  color: #f8f5f4;
-  margin: 0;
-}
-
-.philosophy h3 {
-  padding: 6vw 0 4vw 0;
-}
 
 .philosophy p {
   padding: 0 6vw 0 6vw;
@@ -173,26 +202,6 @@ body {
   padding: 3vw 0 6vw 0;
 }
 
-.philosophy .btn {
-  background-color: #8c6a56;
-  color: white;
-  border: 1px solid #59372a;
-}
-
-.philosophy a:hover,
-.philosophy a:focus {
-  background-color: #59372a;
-  color: white;
-}
-
-.philosophy a:hover {
-  border: 1px solid #8c6a56;
-}
-
-.philosophy a:focus {
-  box-shadow: 2px 2px 2px 2px #8c6a56;
-}
-
 
 /* Benefits */
 
@@ -202,17 +211,13 @@ body {
   align-items: center;
 }
 
-.benefits h3,
+.benefits h2,
 .benefits ul {
   margin: 0;
 }
 
-.benefits h3 {
-  padding: 6vw 0 4vw 0;
-}
-
 .benefits ul {
-  padding: 0 6vw 6vw 6vw;
+  padding: 1rem 6vw 6vw 6vw;
 }
 
 .benefits ul {
@@ -231,61 +236,22 @@ body {
 
 /* Questions */
 
-.questions {
-  background-color: #2D402C;
-}
-
-.questions h3,
-.questions p {
-  color: #f8f5f4;
-  margin: 0;
-}
-
-.questions h3 {
+.questions h2 {
   padding: 5vw 0 1vw 0;
-  font-size: 1.30em;
-}
-
-.questions p {
-  padding: 1vw 0 1vw 0;
+  font-size: 1.25em;
 }
 
 .questions .contact-us-button {
-  padding: 0.5vw 0 5vw 0;
-}
-
-.questions .btn {
-  background-color: #8c6a56;
-  color: white;
-  border: 1px solid #59372a;
-}
-
-.questions a:hover,
-.questions a:focus,
-.questions a:active {
-  background-color: #59372a;
-  color: white;
-}
-
-.questions a:hover {
-  border: 1px solid #8c6a56;
-}
-
-.questions a:focus {
-  box-shadow: 2px 2px 2px 2px #8c6a56;
+  padding: 0 0 3vw 0;
 }
 
 
 /* The taste that you will remember */
 
-.food-example h3 {
-  padding: 6vw 0 3vw 0;
-  font-size: 1.35em;
+.food-example p {
+  padding: 2vw 0 1vw 0;
 }
 
-.food-example p {
-  padding: 2vh 0 0 0;
-}
 
 /* Map */
 
@@ -296,15 +262,7 @@ body {
   display: block;
 }
 
-
-/* Footer */
-
-footer {
-  color: #f8f5f4;
-  background-color: #2D402C;
-}
-
-/* Social links in footer */
+/* Social links in the footer */
 footer a {
   color: #f8f5f4;
   text-decoration: none;
@@ -355,15 +313,11 @@ footer a:active {
     height: 4vw;
   }
 
-  .philosophy h3,
+  .philosophy h2,
   .philosophy p,
-  .benefits h3,
+  .benefits h2,
   .benefits ul {
     line-height: 3vw;
-  }
-
-  .food-example .centered-into-div {
-    padding-bottom: 2vw;
   }
 
   .map iframe {
@@ -372,6 +326,10 @@ footer a:active {
 }
 
 @media screen and (min-width: 2000px) {
+
+  body {
+    background: linear-gradient(rgba(45, 64, 44, 0.8), rgba(45, 64, 44, 0.8));
+  }
 
   .navbar {
     font-size: 1.25rem;
@@ -383,8 +341,16 @@ footer a:active {
     font-size: 1.5rem;
   }
 
-  body {
-    background: linear-gradient(rgba(45, 64, 44, 0.8), rgba(45, 64, 44, 0.8));
+  .questions h2 {
+    padding: 4vw 0 1vw 0;
+  }
+
+  .food-example h2 {
+    padding: 5vw 0 2vw 0;
+  }
+
+  .food-example p {
+    padding-bottom: 1.5vw;
   }
 
   .btn {
@@ -394,11 +360,6 @@ footer a:active {
   .map iframe {
     height: 20vw;
   }
-
-  .food-example p {
-    padding: 2vw 0 1vw 0;
-  }
-
 }
 
 
@@ -455,16 +416,23 @@ footer a:active {
     filter: brightness(100%);
   }
 
-  .menu-items .col {
-    height: 11vw;
-  }
-
+  .menu,
   .philosophy .centered-into-div,
   .benefits .centered-into-div,
   .questions,
   .food-example .centered-into-div {
-    padding-top: 3vw;
-    padding-bottom: 3vw;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+  }
+
+  .menu-items .col {
+    height: 11vw;
+  }
+
+  .full-of-img-div img {
+    height: 55vh;
+    width: 100%;
+    object-fit: cover;
   }
 
   body,
@@ -476,15 +444,7 @@ footer a:active {
     font-size: 13px;
   }
 
-  .questions .contact-us-button {
-    padding-top: 2vw;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  .food-example h3 {
-    padding: 10vw 0 6vw 0;
+  .food-example h2 {
+    padding: 8vh 0 3vh 0;
   }
 }

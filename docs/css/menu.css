@@ -90,16 +90,17 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     color: #59372a;
+    padding-bottom: 5vw;
 }
 
-.menu h3 {
-    padding-top: 8vw;
-    padding-bottom: 5vw;
+.menu h2 {
+    font-size: 1.25em;
+    padding-top: 6vw;
+    padding-bottom: 4vw;
 }
 
 .menu-items {
     font-family: 'Lato', sans-serif;
-    ;
 }
 
 .menu-items .col.fw-bold {
@@ -178,18 +179,18 @@ footer a:focus {
     .menu-items .col {
         height: 4vw;
     }
-
-    .menu {
-        padding-bottom: 10vw;
-    }
 }
 
 @media screen and (min-width: 2000px) {
+
     .caseForContent {
         margin-left: 15vw;
         margin-right: 15vw;
         font-size: 1.25rem;
+    }
 
+    .navbar {
+        font-size: 1.25rem;
     }
 
     body {
@@ -205,11 +206,7 @@ footer a:focus {
 @media screen and (max-width: 991px) {
 
     .top-img {
-        margin-top: 8%;
-    }
-
-    .menu-items {
-        padding-bottom: 8vw;
+        margin-top: 6%;
     }
 
     .menu-items,
@@ -241,7 +238,7 @@ footer a:focus {
         margin-top: 12%;
     }
 
-    .menu h3 {
+    .menu h2 {
         padding-top: 10vw;
     }
 
@@ -263,7 +260,7 @@ footer a:focus {
         font-size: 14px;
     }
 
-    h3 {
+    h2 {
         font-size: 16px;
     }
 }

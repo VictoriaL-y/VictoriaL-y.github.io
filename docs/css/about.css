@@ -92,12 +92,13 @@ body {
     color: #59372a;
 }
 
-.main-content h3 {
-    padding-top: 8vw;
+.main-content h2 {
+    font-size: 1.25em;
+    padding-top: 6vw;
 }
 
 .main-content p {
-    padding-bottom: 5vw;
+    padding-bottom: 1.8vw;
 }
 
 .main-content h5 {
@@ -164,7 +165,7 @@ footer a:focus {
     }
 
     .team {
-        padding-bottom: 5vw;
+        padding-bottom: 4vw;
     }
 
     .main-content h5 {
@@ -173,14 +174,20 @@ footer a:focus {
 }
 
 @media screen and (min-width: 2000px) {
+
     .caseForContent {
         margin-left: 15vw;
         margin-right: 15vw;
+        font-size: 1.5rem;
+    }
+
+    .navbar {
         font-size: 1.25rem;
     }
 
     body {
         background: linear-gradient(rgba(45, 64, 44, 0.8), rgba(45, 64, 44, 0.8));
+        font-size: 14px;
     }
 
     .map iframe {
@@ -192,7 +199,7 @@ footer a:focus {
 @media screen and (max-width: 991px) {
 
     .top-img {
-        margin-top: 8%;
+        margin-top: 7%;
     }
 
     .main-content p,
@@ -225,8 +232,9 @@ footer a:focus {
         font-size: 14px;
     }
 
-    h3 {
+    .main-content h2 {
         font-size: 16px;
+        padding-top: 10vw;
     }
 
     h5 {
