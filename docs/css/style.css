@@ -408,6 +408,11 @@ footer a:active {
 
 @media screen and (max-width: 479px) {
 
+  body,
+  .btn {
+    font-size: 14px;
+  }
+
   .carousel {
     margin-top: 12%;
   }
@@ -425,26 +430,44 @@ footer a:active {
     padding-bottom: 6vw;
   }
 
+  .menu h2 {
+    padding-bottom: 4vw;
+  }
+
   .menu-items .col {
     height: 11vw;
-  }
-
-  .full-of-img-div img {
-    height: 55vh;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  body,
-  .btn {
-    font-size: 14px;
   }
 
   .menu-items {
     font-size: 13px;
   }
 
+  .philosophy,
+  .benefits {
+    line-height: 6.5vw;
+  }
+
+  .philosophy .full-of-img-div img {
+    height: 47vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .philosophy .about-us-button {
+    padding-top: 1rem;
+  }
+
+  .benefits .full-of-img-div img {
+    height: 55vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
   .food-example h2 {
-    padding: 8vh 0 3vh 0;
+    padding: 7vh 0 3vh 0;
+  }
+
+  .food-example p {
+    font-size: 1.15em;
   }
 }
