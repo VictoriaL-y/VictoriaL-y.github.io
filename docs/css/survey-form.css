@@ -79,6 +79,10 @@ textarea {
     margin: auto auto;
 }
 
+input {
+    accent-color: #59372a;
+}
+
 input[type="submit"].btn:hover,
 input[type="submit"].btn:focus {
     background-color: #59372a;
